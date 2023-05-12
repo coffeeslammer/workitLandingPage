@@ -14,14 +14,70 @@
 
 
  body {
+     display: grid;
      font-family: 'Fraunces', serif;
-     /* font-family: 'Manrope', sans-serif; */
+     justify-content: center;
      background-color: #333;
  }
 
+ .bg-pattern-footer,
+ .bg-pattern-left,
+ .bg-pattern-right {
+     position: absolute;
+     visibility: hidden;
+ }
+
+ p,
+ button {
+     font-family: 'Manrope', sans-serif;
+ }
+
+ .curve-creator-upper {
+     position: absolute;
+     width: 150%;
+     height: 175px;
+     background-color: #24053e;
+     border-radius: 50%;
+     left: 50%;
+     right: 50%;
+     transform: translate(-50%, -50%);
+     bottom: -40%;
+ }
+
+ header {
+     grid-area: header;
+     background-color: #24053e;
+ }
+
+ main {
+     grid-area: main;
+     background-color: #fcf8ff;
+ }
+
+ section {
+     grid-area: section;
+     background-color: white;
+ }
+
+ footer {
+     grid-area: footer;
+     background-color: white;
+ }
+
  .container-main {
+     display: grid;
+     position: relative;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 2fr 1.3fr .15fr;
      min-width: 350px;
+     max-width: 1440px;
      text-align: center;
+     grid-template-areas:
+         "header"
+         "main"
+         "section"
+         "footer";
+     overflow: hidden;
  }
 
  .header-list {
@@ -29,6 +85,10 @@
      display: flex;
      justify-content: space-between;
      list-style-type: none;
+ }
+
+ .header-list a:hover {
+     color: #44ffa1;
  }
 
  .underline {
@@ -53,17 +113,18 @@
      margin-bottom: 7rem;
  }
 
- /* my temp pallet delete when done */
- .temp-color {
-     color: #24053e;
+ .btn-learn-more:hover {
      color: #44ffa1;
-     color: #584d62;
-     color: #fcf8ff;
+     padding-top: .94rem;
+     padding-bottom: .94rem;
+     border: 1px solid #44ffa1;
+     background-color: #24053e;
+     cursor: pointer;
  }
 
  .container-upper {
+     max-height: 100%;
      position: relative;
-     background-color: #24053e;
      color: #fff;
      padding-top: 2rem;
      padding-left: 1.3rem;
@@ -82,30 +143,41 @@
  }
 
  .container-middle {
-     background-color: #fcf8ff;
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: .5fr 1fr 1fr 1fr;
+     grid-template-areas:
+         "filler"
+         "one"
+         "two"
+         "three";
      position: relative;
      overflow: hidden;
+     padding-left: 2rem;
+     padding-right: 2rem;
+
  }
 
- .info-container {
-     margin-top: 12rem;
-     padding-left: 1.3rem;
-     padding-right: 1.3rem;
+ .filler {
+     grid-area: filler;
  }
 
- .info-container h2 {
-     margin-top: 2rem;
-     font-weight: 500;
+ .article-1 {
+     grid-area: one;
  }
 
- .info-container p {
-     line-height: 2;
-     color: #584d62;
-     margin-bottom: 2rem;
+ .article-2 {
+     grid-area: two;
  }
 
- .numbers {
+ .article-3 {
+     grid-area: three;
+     z-index: 100;
+ }
+
+ .number {
      display: grid;
+     grid-area: num;
      align-items: center;
      margin: auto;
      width: 3rem;
@@ -114,9 +186,34 @@
      border-radius: 50%;
  }
 
+ .heading {
+     grid-area: heading;
+     margin-top: 2rem;
+     font-weight: 500;
+ }
+
+ .article {
+     grid-area: article;
+     line-height: 2;
+     color: #584d62;
+     margin-bottom: 2rem;
+ }
+
+ .curve-creator-lower {
+     position: absolute;
+     width: 150%;
+     height: 250px;
+     background-color: #fcf8ff;
+     border-radius: 50%;
+     left: 50%;
+     right: 50%;
+     transform: translate(-50%, -50%);
+     bottom: 31%;
+     z-index: 9;
+ }
+
  .container-bottom {
      position: relative;
-     background-color: white;
  }
 
  .founder-image {
@@ -157,8 +254,13 @@
      margin-bottom: 2rem;
  }
 
- footer {
-     background-color: white;
+ .btn-apply:hover {
+     color: #44ffa1;
+     padding-top: .94rem;
+     padding-bottom: .94rem;
+     border: 1px solid #44ffa1;
+     background-color: #24053e;
+     cursor: pointer;
  }
 
  .workit-logo-bottom {
@@ -172,4 +274,216 @@
      justify-content: center;
      gap: 2rem;
      list-style-type: none;
+ }
+
+ @media (min-width: 670px) {
+
+     .bg-pattern-footer,
+     .bg-pattern-left,
+     .bg-pattern-right {
+         visibility: visible;
+         z-index: 2;
+     }
+
+     .bg-pattern-left {
+         position: absolute;
+         left: -15rem;
+     }
+
+     .bg-pattern-right {
+         position: absolute;
+         right: -6rem;
+         bottom: 0rem;
+     }
+
+     .phone-img {
+         width: 514px;
+         height: 296px;
+         bottom: -90%;
+     }
+
+
+     .container-middle {
+         grid-template-rows: 1fr .5fr .5fr .5fr;
+     }
+
+     .heading,
+     .article {
+         text-align: left;
+     }
+
+     .article-1 {
+         display: grid;
+         margin-top: 4rem;
+         grid-template-columns: 1fr 3fr;
+         grid-template-rows: .5fr .1fr;
+         grid-template-areas:
+
+             "num heading"
+             "num article";
+     }
+
+     .article-2 {
+         display: grid;
+         grid-template-columns: 1fr 3fr;
+         grid-template-rows: .5fr 1fr;
+         grid-template-areas:
+
+             "num heading"
+             "num article";
+     }
+
+     .article-3 {
+         display: grid;
+         grid-template-columns: 1fr 3fr;
+         grid-template-rows: .5fr 1fr;
+         grid-template-areas:
+
+             "num heading"
+             "num article";
+     }
+
+     section {
+         display: grid;
+         justify-content: center;
+     }
+
+     .container-bottom {
+
+         max-width: 800px;
+     }
+
+     .founder-image {
+         display: flex;
+         margin-left: 2rem;
+         margin-bottom: -8rem;
+     }
+
+     .card-container {
+         text-align: left;
+         margin-right: 2rem;
+         margin-left: 13rem;
+         padding-left: 3rem;
+         padding-right: 3rem;
+         overflow: hidden;
+     }
+
+     .bg-pattern-footer {
+         position: absolute;
+         bottom: -8rem;
+         right: 0;
+     }
+
+     .card-container h2 {
+         font-size: 2.5rem;
+     }
+
+     .btn-apply {
+         margin-bottom: 4rem;
+     }
+ }
+
+ @media (min-width: 1000px) {
+
+     .bg-pattern-footer,
+     .bg-pattern-left,
+     .bg-pattern-right {
+         visibility: visible;
+     }
+
+     /* 
+     .container-main {
+         overflow: hidden;
+     } */
+
+     .phone-img {
+         width: 767px;
+         height: 441px;
+         bottom: -135%;
+     }
+
+     .curve-creator-upper {
+         height: 250px;
+         background-color: #24053e;
+         bottom: -75%;
+     }
+
+     .container-middle {
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 1.5fr 1fr;
+         grid-template-areas:
+             "filler filler filler"
+             "one two three";
+     }
+
+     .bg-pattern-left {
+         position: absolute;
+         left: -9rem;
+     }
+
+     .bg-pattern-right {
+         position: absolute;
+         right: -3rem;
+         bottom: 0rem;
+     }
+
+     .article {
+         text-align: center;
+     }
+
+     .article-1 {
+         display: block;
+         margin-top: 0;
+         padding-left: 1rem;
+         padding-right: 1rem;
+     }
+
+     .article-2 {
+         display: block;
+         padding-left: 1rem;
+         padding-right: 1rem;
+     }
+
+     .article-3 {
+         display: block;
+         padding-left: 1rem;
+         padding-right: 1rem;
+     }
+
+     section {
+         display: grid;
+         justify-content: center;
+     }
+
+     .container-bottom {
+
+         max-width: 1150px;
+     }
+
+     .founder-image {
+         display: flex;
+         width: 477px;
+         height: 477px;
+         margin-left: 2rem;
+         margin-bottom: -18rem;
+     }
+
+     .card-container {
+         text-align: left;
+         margin-right: 4rem;
+         margin-left: 25rem;
+         padding-left: 3rem;
+         padding-right: 3rem;
+         overflow: hidden;
+     }
+
+     .bg-pattern-footer {
+         position: absolute;
+         bottom: -8rem;
+         right: 0;
+     }
+
+     .card-container h2 {
+         font-size: 3rem;
+     }
  }
