@@ -1,5 +1,9 @@
 # Frontend Mentor - Workit landing page solution
 
+# UPDATE
+
+I have completely re-did my css. I also got rid of my buttons and made them anchor tags instead. Also added them to the social media icons as well. I added ::before and ::after which cleaned up my radius on the bottoms. Used the ::before for the numbers. Got rid of all the grid areas and mostly relied on padding and margins.
+
 ## My process
 
 I tried my best to follow html semantics. I am not sure if I should have used article instead of section.
