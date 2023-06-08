@@ -42,7 +42,8 @@ footer {
 
 .container-main {
     position: relative;
-    min-width: 350px;
+    /* min-width: 350px; */
+    /* min-width: 21.875rem; */
     text-align: center;
     overflow: hidden;
 }
@@ -51,10 +52,14 @@ footer {
     background-color: #24053e;
     position: relative;
     color: #fff;
-    padding-top: 2rem;
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
-    padding-bottom: 5rem;
+    /* padding-top: 2rem; */
+    padding-top: 32px;
+    /* padding-left: 1.3rem; */
+    padding-left: 20px;
+    /* padding-right: 1.3rem; */
+    padding-right: 20px;
+    /* padding-bottom: 5rem; */
+    padding-bottom: 80px;
 
 }
 
@@ -65,9 +70,11 @@ footer {
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
-    bottom: -6rem;
+    /* bottom: -6rem; */
+    bottom: -96px;
     width: 150%;
-    height: 5rem;
+    /* height: 5rem; */
+    height: 80px;
     border-radius: 50% / 0 0 100% 100%;
     background-color: #24053e;
     z-index: 2;
@@ -93,14 +100,18 @@ h1 {
     font-size: 3.125rem;
     font-weight: 600;
     line-height: 3.125rem;
-    margin-top: 3.5rem;
-    margin-bottom: 4rem;
+    /* margin-top: 3.5rem; */
+    margin-top: 56px;
+    /* margin-bottom: 4rem; */
+    margin-bottom: 64px;
 }
 
 .btn-learn-more {
-    padding: 1rem 1.5rem;
+    /* padding: 1rem 1.5rem; */
+    padding: 16px 24px;
     color: #24053e;
     background-color: #44ffa1;
+    border: 1px solid #44ffa1;
     font-weight: 500;
     font-size: 1.125rem;
     text-decoration: none;
@@ -108,8 +119,8 @@ h1 {
 
 .btn-learn-more:hover {
     color: #44ffa1;
-    padding-top: .94rem;
-    padding-bottom: .94rem;
+    /* padding-top: .94rem; */
+    /* padding-bottom: .94rem; */
     border: 1px solid #44ffa1;
     background-color: #24053e;
 }
@@ -121,16 +132,20 @@ h1 {
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
-    bottom: -15rem;
+    /* bottom: -15rem; */
+    bottom: -240px;
     z-index: 10;
 }
 
 .container-middle {
     background-color: #fcf8ff;
     position: relative;
-    padding-top: 10rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    /* padding-top: 10rem; */
+    padding-top: 160px;
+    /* padding-left: 1.5rem; */
+    padding-left: 24px;
+    /* padding-right: 1.5rem; */
+    padding-right: 24px;
     counter-reset: numbers;
 }
 
@@ -141,16 +156,19 @@ h1 {
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
-    bottom: -6rem;
+    /* bottom: -6rem; */
+    bottom: -96px;
     width: 150%;
-    height: 4rem;
+    /* height: 4rem; */
+    height: 64px;
     border-radius: 50% / 0 0 100% 100%;
     background-color: #fcf8ff;
 }
 
 .heading {
     position: relative;
-    margin-top: 8rem;
+    /* margin-top: 8rem; */
+    margin-top: 128px;
 }
 
 .heading::after {
@@ -162,13 +180,16 @@ h1 {
     align-items: center;
     font-size: 1.5rem;
     width: 3rem;
+    /* width: 48px; */
     height: 3rem;
+    /* height: 48px; */
     border-radius: 50%;
     border: 1px solid #24053e;
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
     bottom: 2rem;
+    /* bottom: 32px; */
 }
 
 .article-text {
@@ -178,28 +199,36 @@ h1 {
 }
 
 .container-bottom {
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
+    padding-top: 48px;
 }
 
 .founder-image {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
+    margin-top: 80px;
     width: 281px;
     height: 281px;
-    margin-bottom: -3rem;
+    /* margin-bottom: -3rem; */
+    margin-bottom: -48px;
 }
 
 .card-container {
     position: relative;
     background-color: #24053e;
     color: white;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    /* margin-left: 1rem; */
+    margin-left: 16px;
+    /* margin-right: 1rem; */
+    margin-right: 16px;
+    /* padding-left: 2rem; */
+    padding-left: 32px;
+    /* padding-right: 2rem; */
+    padding-right: 32px;
 }
 
 .card-container h2 {
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
+    padding-top: 32px;
     font-size: 2rem;
     font-weight: 500;
 }
@@ -211,33 +240,39 @@ h1 {
 
 .btn-apply {
     display: inline-block;
-    padding: 1rem 1.5rem;
+    /* padding: 1rem 1.5rem; */
+    padding: 16px 24px;
     background-color: #44ffa1;
     color: #24053e;
     font-weight: 500;
     font-size: 1.125rem;
-    border: none;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    border: 1px solid #44ffa1;
+    /* margin-top: 1rem; */
+    margin-top: 16px;
+    /* margin-bottom: 2rem; */
+    margin-bottom: 32px;
     text-decoration: none;
 }
 
 .btn-apply:hover {
     color: #44ffa1;
-    padding-top: .94rem;
-    padding-bottom: .94rem;
+    /* padding-top: .94rem; */
+    /* padding-bottom: .94rem; */
     border: 1px solid #44ffa1;
     background-color: #24053e;
 
 }
 
 .workit-logo-bottom {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
+    margin-top: 80px;
 }
 
 footer ul {
-    margin-top: 3rem;
-    padding-bottom: 3rem;
+    /* margin-top: 3rem; */
+    margin-top: 48px;
+    /* padding-bottom: 3rem; */
+    padding-bottom: 48px;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -256,22 +291,27 @@ footer ul {
 
     .bg-pattern-left {
         position: absolute;
-        left: -15rem;
+        /* left: -15rem; */
+        left: -240px;
     }
 
     .bg-pattern-right {
         position: absolute;
-        right: -6rem;
-        bottom: 0rem;
+        /* right: -6rem; */
+        right: -96px;
+        bottom: 0;
     }
 
     .container-upper {
-        padding-bottom: 10rem;
+        /* padding-bottom: 10rem; */
+        padding-bottom: 160px;
     }
 
     .container-upper::after {
-        height: 10rem;
-        bottom: -10rem;
+        /* height: 10rem; */
+        height: 160px;
+        /* bottom: -10rem; */
+        bottom: -160px;
     }
 
     h1 {
@@ -281,52 +321,68 @@ footer ul {
     .phone-img {
         width: 514px;
         height: 296px;
-        bottom: -24rem;
+        /* bottom: -24rem; */
+        bottom: -384px;
     }
 
     .container-middle {
         text-align: start;
-        padding-left: 11rem;
-        padding-right: 5rem;
+        /* padding-left: 11rem; */
+        padding-left: 176px;
+        /* padding-right: 5rem; */
+        padding-right: 80px;
     }
 
     .container-middle::after {
-        bottom: -10rem;
-        height: 7rem;
+        /* bottom: -10rem; */
+        bottom: -160px;
+        /* height: 7rem; */
+        height: 112px;
     }
 
     .heading::after {
         font-size: 1.5rem;
-        left: -3.75rem;
-        bottom: -5rem;
+        /* left: -3.75rem; */
+        left: -60px;
+        /* bottom: -5rem; */
+        bottom: -80px;
     }
 
     .heading {
         font-size: 1.75rem;
-        margin-top: 6rem;
+        /* margin-top: 6rem; */
+        margin-top: 96px;
     }
 
     .container-bottom {
-        padding-top: 6rem;
+        /* padding-top: 6rem; */
+        padding-top: 96px;
     }
 
     .founder-image {
         display: flex;
-        margin-left: 2rem;
-        margin-bottom: -8rem;
+        /* margin-left: 2rem; */
+        margin-left: 32px;
+        /* margin-bottom: -8rem; */
+        margin-bottom: -128px;
     }
 
     .card-container {
         text-align: left;
-        margin-right: 2rem;
-        margin-left: 13rem;
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
+        /* margin-right: 2rem; */
+        margin-right: 32px;
+        /* margin-left: 13rem; */
+        margin-left: 208px;
+        /* padding-left: 3.5rem; */
+        padding-left: 56px;
+        /* padding-right: 3.5rem; */
+        padding-right: 56px;
     }
 
     .bg-pattern-footer {
         position: absolute;
-        bottom: -8rem;
+        /* bottom: -8rem; */
+        bottom: -128px;
         right: 0;
     }
 
@@ -339,7 +395,8 @@ footer ul {
     }
 
     .btn-apply {
-        margin-bottom: 4rem;
+        /* margin-bottom: 4rem; */
+        margin-bottom: 64px;
     }
 }
 
@@ -357,12 +414,15 @@ footer ul {
     }
 
     .container-upper {
-        padding: 4rem 10rem 14rem 10rem;
+        /* padding: 4rem 10rem 14rem 10rem; */
+        padding: 64px 160px 224px 160pxs;
     }
 
     .container-upper::after {
-        height: 15rem;
-        bottom: -15rem;
+        /* height: 15rem; */
+        height: 240px;
+        /* bottom: -15rem; */
+        bottom: -240px;
     }
 
     h1 {
@@ -386,42 +446,51 @@ footer ul {
     .phone-img {
         width: 767px;
         height: 441px;
-        bottom: -31rem;
+        /* bottom: -31rem; */
+        bottom: -496px;
     }
 
     .container-middle {
         display: flex;
         text-align: center;
         gap: 1rem;
-        padding-right: 6rem;
-        padding-left: 6rem;
+        /* padding-right: 6rem; */
+        padding-right: 96px;
+        /* padding-left: 6rem; */
+        padding-left: 96px;
     }
 
     .container-middle::after {
         width: 125%;
-        bottom: -17rem;
-        height: 12rem;
+        /* bottom: -17rem; */
+        bottom: -272px;
+        /* height: 12rem; */
+        height: 192px;
     }
 
     .articles {
-        padding-top: 10rem;
+        /* padding-top: 10rem; */
+        padding-top: 160px;
     }
 
     .heading::after {
         left: 50%;
         right: 50%;
         transform: translate(-50%, -50%);
-        bottom: 2rem;
+        /* bottom: 2rem; */
+        bottom: 32px;
     }
 
     .bg-pattern-left {
         position: absolute;
-        left: -9rem;
+        /* left: -9rem; */
+        left: -144px;
     }
 
     .bg-pattern-right {
         position: absolute;
-        right: -3rem;
+        /* right: -3rem; */
+        right: -48px;
         bottom: 0rem;
     }
 
@@ -435,26 +504,32 @@ footer ul {
     }
 
     .container-bottom {
-        padding-top: 12rem;
+        /* padding-top: 12rem; */
+        padding-top: 192px;
     }
 
     .founder-image {
         display: flex;
         width: 477px;
         height: 477px;
-        margin-left: 2rem;
-        margin-bottom: -18rem;
+        /* margin-left: 2rem; */
+        margin-left: 32px;
+        /* margin-bottom: -18rem; */
+        margin-bottom: -288px;
     }
 
     .card-container {
-        margin-right: 12rem;
-        margin-left: 25rem;
+        /* margin-right: 12rem; */
+        margin-right: 192px;
+        /* margin-left: 25rem; */
+        margin-left: 400px;
         max-width: 59.375rem;
     }
 
     .bg-pattern-footer {
         position: absolute;
-        bottom: -8rem;
+        /* bottom: -8rem; */
+        bottom: -128px;
         right: 0;
     }
 
